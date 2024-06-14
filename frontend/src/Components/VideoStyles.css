@@ -1,0 +1,50 @@
+video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-video {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.main-video .content {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-video .content h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.main-video p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    color: #fff;
+}
+
+
+@media screen and (max-width:250px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+    video {
+        position: fixed;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+    }
+}
