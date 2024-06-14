@@ -10,11 +10,8 @@ const Video = () => {
                 <source src={show_video} type='video/mp4' />
             </video>
             <div className='content'>
-                <h1>Welcome to AEI Applied Electronic Institute</h1>
+                <h1 style={{color:"red"}}>Welcome to AEI Applied Electronic Institute</h1>
                 <p>The best place to launch your ideas.</p>
-                <div>
-                <button type="button" class="btn btn-primary btn-lg btn-block" onClick={Service}>Enter to Dashboard</button>
-                </div>
             </div>
         </div>
     )

@@ -14,11 +14,8 @@ video {
 
 .main-video .content {
     text-align: center;
-    position: absolute;
-    margin: auto;
     width: 100%;
     height: 100%;
-    top: 40vh;
 }
 
 .main-video .content h1 {
@@ -34,18 +31,8 @@ video {
     color: #fff;
 }
 
-.main-video .btn {
-    margin: 3rem .5rem;
-    background-color: #33ffac;
-    font-size: 2rem;
-}
 
-.btn:hover {
-    background-color: #3691bb;
-
-}
-
-@media screen and (max-width:640px) {
+@media screen and (max-width:250px) {
     .content h1 {
         font-size: 3rem;
     }
@@ -54,7 +41,6 @@ video {
         width: 100%;
         object-fit: cover;
         z-index: -1;
-        aspect-ratio: 16/9;
     }
 
     .content p {
