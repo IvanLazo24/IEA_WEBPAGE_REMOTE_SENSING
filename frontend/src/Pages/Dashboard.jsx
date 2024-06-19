@@ -3,7 +3,7 @@ import { FaFacebook, FaLinkedin, FaMailBulk, FaPhone, FaSearchLocation, FaTwitte
 
 
 const Dashboard = () => {
-  const[value]=useState(['http://zientziajoleak.pbworks.com/f/1527515434/AnetoStackGIF.gif'])
+  const[value]=useState(['https://pnt.ign.es/PNTtheme/images/imgPNT/5_2_Sentinel-2_L2A-timelapse-deltaebro-ano2018.gif'])
   return(
   
   <div className="App">

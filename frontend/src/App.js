@@ -6,7 +6,6 @@ import 'antd/dist/reset.css';
 import HomePage from "./Pages/HomePage";
 import Dashboard from "./Pages/Dashboard";
 import PuraPura from "./Pages/PuraPura";
-import Leaf from "./Pages/Leaf";
 
 function App() {
   return (
@@ -31,7 +30,7 @@ function Rutas() {
       <Route path="/" element={<HomePage />}></Route>
       <Route path="/air" element={<Dashboard />}></Route>
       <Route path="/water" element={<Dashboard />}></Route>
-      <Route path="/leaf" element={<Leaf />} ></Route>
+      <Route path="/leaf" element={<PuraPura />} ></Route>
       <Route path="/aboutus" element={<Dashboard />} ></Route>
       <Route path="*" element={<> 404-Not found</>}></Route>
       </Routes>

@@ -11,19 +11,19 @@ import logo from '../../assets/logo.png'
 const MenuBar = () => {
   const[openMenu, setOpenMenu] = useState(false);
   return (
-    <div style={{height: "100%", backgroundColor:"rgb(0,255,150)"}}>
-      <div className="menuIcon" style={{backgroundColor:"rgb(0,255,150)", height: "100%", paddingLeft: 12, paddingTop:12}}>
-        <MenuOutlined theme="dark" style={{fontSize:30}}
+    <div style={{backgroundColor:"rgb(0,211,147)"}}>
+      <div className="menuIcon" style={{backgroundColor:"rgb(0,211,147)", height: "100%", paddingLeft: 12, paddingTop:12}}>
+        <MenuOutlined theme="light" style={{fontSize:30}}
         onClick={()=>{setOpenMenu(true);
         }}/>
       </div>
       <div>
-      <div className="headerMenu" style={{height: "100%", backgroundColor:"rgb(0,255,150)"}}>
+      <div className="headerMenu" style={{height: "100%", backgroundColor:"rgb(0,211,147)"}}>
       <HoriMenu />
       </div>
       <Drawer 
-      placement="left" open={openMenu} onClose={()=>{setOpenMenu(false)}} closable={false} Style={{backgroundColor:"rgb(0,255,150)", color:"rgb(0,255,150)"}}>
-          <MenuOutlined theme="dark" style={{fontSize:30, backgroundColor:"rgb(0,255,150)"}}
+      placement="left" open={openMenu} onClose={()=>{setOpenMenu(false)}} closable={false} Style={{backgroundColor:"rgb(0,211,147)", color:"rgb(0,211,147)",height: "100%"}}>
+          <MenuOutlined theme="light" style={{fontSize:19, backgroundColor:"rgb(0,211,147)",width:'100%'}}
         onClick={()=>{setOpenMenu(false);}}/>
           <HoriMenu isInline/>
         </Drawer>
@@ -38,9 +38,9 @@ function HoriMenu ({isInline = false}) {
   const location = useLocation();
   return (
     <Menu
-        style={{backgroundColor: "rgb(0,255,150)", color:"rgb(0,255,150)", fontSize:30, border:'none'}}
+        style={{backgroundColor: "rgb(0,211,147)", color:"rgb(0,150,250)", fontSize:15, border:'none',height: "100%",width:'100%'}}
         mode={isInline ? "inline":"horizontal"}
-        theme="dark"
+        theme="light"
         defaultSelectedKeys={[location.pathname]}
       >
         <img src={logo} alt="Logo"/>
